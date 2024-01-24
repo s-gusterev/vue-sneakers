@@ -26,7 +26,7 @@ const route = useRoute()
     <nav>
       <ul class="flex items-center gap-4 flex-wrap sm:gap-10">
         <li
-          v-if="route.path !== '/vue-sneakers/'"
+          v-if="route.path !== '/'"
           class="flex items-center cursor-pointer gap-3 text-slate-600 hover:text-black"
         >
           <router-link
