@@ -6,17 +6,17 @@ import Profile from './pages/Profile.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/vue-sneakers/',
     component: Home,
     name: 'home'
   },
   {
-    path: '/favorites',
+    path: '/vue-sneakers/favorites',
     component: Favorites,
     name: 'favorites'
   },
   {
-    path: '/profile',
+    path: '/vue-sneakers/profile',
     component: Profile,
     name: 'profile'
   }

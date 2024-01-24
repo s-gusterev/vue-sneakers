@@ -13,7 +13,7 @@ const route = useRoute()
   <header
     class="flex justify-between items-center flex-wrap gap-4 border-b border-slate-300 px-10 py-8"
   >
-    <router-link to="/"
+    <router-link :to="{ name: 'home' }"
       ><div class="flex items-center">
         <img src="/logo.png" alt="Logo" class="w-10 mr-4" />
         <div>
@@ -26,11 +26,11 @@ const route = useRoute()
     <nav>
       <ul class="flex items-center gap-4 flex-wrap sm:gap-10">
         <li
-          v-if="route.path !== '/'"
+          v-if="route.path !== '/vue-sneakers/'"
           class="flex items-center cursor-pointer gap-3 text-slate-600 hover:text-black"
         >
           <router-link
-            to="/"
+            :to="{ name: 'home' }"
             class="bg-[url(/sneakers.svg)] bg-no-repeat pl-8 bg-left bg-contain"
             active-class="text-black"
             >Каталог</router-link
@@ -48,7 +48,7 @@ const route = useRoute()
         </li>
         <li class="flex items-center cursor-pointer gap-3 text-slate-600 hover:text-black">
           <router-link
-            to="/favorites"
+            :to="{ name: 'favorites' }"
             class="bg-[url(/heart.svg)] bg-no-repeat pl-8 bg-left"
             active-class="text-black"
             >Закладки</router-link
@@ -56,7 +56,7 @@ const route = useRoute()
         </li>
         <li class="flex items-center cursor-pointer gap-3 text-slate-600 hover:text-black">
           <router-link
-            to="/profile"
+            :to="{ name: 'profile' }"
             class="bg-[url(/profile.svg)] bg-no-repeat pl-8 bg-left"
             active-class="text-black"
             >Профиль</router-link
